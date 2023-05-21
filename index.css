@@ -26,6 +26,8 @@
     padding: 0;
 }
 
+/* UTILITY CLASSES */
+
 .active {
     display: flex;
 }
@@ -33,6 +35,8 @@
 .hidden {
     display: none;
 }
+
+/* ------------ */
 
 body {
     display: flex;
@@ -72,6 +76,9 @@ input {
 .title{
     font-size: 1.8rem;
 }
+
+/* RATING COMPONENT */
+
 .submit-rating  > *:not(:first-child), .thankyou *:not(:first-child) {
     margin-top: 1.5rem;
 }
@@ -131,7 +138,7 @@ input {
     color: var(--primary-orange-clr);
 }
 
-/* --------------------------- */
+/* THANK YOU MESSAGE */
 
 .thankyou {
     text-align: center;

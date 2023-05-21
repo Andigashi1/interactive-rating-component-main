@@ -7,6 +7,8 @@ const form = document.querySelector('.submit-rating'),
 
 let ratingValue = 0;
 
+// Add a rating value according to the selected button
+// Add or remove the selected class on click
 
 ratingBtn.forEach(button => {
     button.addEventListener('click', () => {
@@ -21,6 +23,8 @@ ratingBtn.forEach(button => {
         }
     })
 })
+
+// Submit button which can be excecuted only after selecting a value
 
 submitBtn.addEventListener('click', (event) => {
     event.preventDefault()
