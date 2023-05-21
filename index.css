@@ -1,0 +1,149 @@
+/* CUSTOM PROPERTIES */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    /* colors */
+
+    --primary-orange-clr: hsl(25, 97%, 53%);
+    --white-clr: hsl(0, 0%, 100%);
+    --lightgray-clr: hsl(217, 12%, 63%);
+    --mediumgray-clr: hsl(216, 12%, 54%);
+    --darkblue-clr: hsl(213, 19%, 18%);
+    --blue-clr: hsl(215, 22%, 15%);
+    --verydarkblue-clr: hsl(216, 12%, 8%);
+
+    /* typography */
+    --ff: 'Overpass', sans-serif;
+    --fs-p: .9375rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    background-color: var(--verydarkblue-clr);
+    color: var(--white-clr);
+    font-family: var(--ff);
+}
+
+p {
+    line-height: 1.6;
+}
+
+p, .ratings {
+    font-size: var(--fs-p);
+    color: var(--lightgray-clr);
+}
+
+input {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+}
+
+.container {
+    background-color: var(--blue-clr);
+    padding: 2em 1.6em;
+    margin-inline: 1.5em;
+    border-radius: 2em;
+    max-width: 25em;
+}
+
+.title{
+    font-size: 1.8rem;
+}
+.submit-rating  > *:not(:first-child), .thankyou *:not(:first-child) {
+    margin-top: 1.5rem;
+}
+
+.icon {
+    display: inline-block;
+    width: 3em;
+    padding: 1em;
+    background-color: var(--darkblue-clr);
+    border-radius: 50%;
+}
+
+.star-img {
+    display: block;
+    width: 100%;
+}
+
+.ratingForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratingBtn {
+    width: clamp(3em, 10vw, 3.4em);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--darkblue-clr);
+    cursor: pointer;
+    transition: background-color 100ms ease-out;
+}
+
+.ratingBtn.selected {
+    background-color: var(--primary-orange-clr) !important;
+}
+
+.ratingBtn:hover {
+    background-color: var(--mediumgray-clr);
+}
+
+#submit-btn {
+    width: 100%;
+    background-color: var(--primary-orange-clr);
+    padding-block: .9em .7em;
+    text-align: center;
+    border-radius: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+    transition: background-color 100ms ease-out, color 100ms ease-out;
+}
+
+#submit-btn:hover {
+    background-color: var(--white-clr);
+    color: var(--primary-orange-clr);
+}
+
+/* --------------------------- */
+
+.thankyou {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.your-rating {
+    color: var(--primary-orange-clr);
+    background-color: var(--darkblue-clr);
+    padding: .4em 1em;
+    border-radius: 2em;
+}
+
