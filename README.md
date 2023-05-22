@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/Andigashi1/interactive-rating-component-main)
+- Live Site URL: [live site URL](https://statuesque-ganache-973204.netlify.app)
 
 ## My process
 
